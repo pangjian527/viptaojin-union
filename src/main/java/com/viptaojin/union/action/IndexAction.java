@@ -12,8 +12,9 @@ import javax.servlet.http.HttpSession;
 @Controller
 public class IndexAction extends BaseAction{
 
-    @RequestMapping("/viptaojin/")
+    @RequestMapping("/viptaojin/index")
     public String execute(HttpSession session, Model model){
+        System.out.println("欢迎使用vip淘金网");
         return "index";
     }
 }
